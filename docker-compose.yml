@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+#      TODO II still no access
+#      Datasource needed for the ABB Reconciliation
+      SPRING_DATASOURCE_URL: jdbc:mysql??????
+      SPRING_DATASOURCE_USERNAME: user??????
+      SPRING_DATASOURCE_PASSWORD: pass??????
+      SPRING_JPA_HIBERNATE_DLL_AUTO: none
+      SPRING_PROFILES_ACTIVE: dummyJdbc
+
+
